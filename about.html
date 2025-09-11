@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/bootstrap-icons-1.13.1/package/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <div>
+          <i class="bi bi-brilliance bg-light"></i>
+          <a class="navbar-brand" href="index.html">Blog</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog-detail.html">Blog Detail</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Content -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-4 text-center">
+            <img
+              src="/assets/PP Polio.jpg"
+              alt="Profile"
+              class="img-fluid rounded-circle mb-3"
+              width="200"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2>Halo, saya Josua!</h2>
+            <p>
+              Saya seorang pengembang web pemula yang sedang belajar membangun
+              website menggunakan <strong>HTML, CSS, dan Bootstrap</strong>.
+              Website ini dibuat sebagai latihan untuk memahami struktur dasar
+              halaman web, komponen Bootstrap, serta penerapan responsive
+              design.
+            </p>
+            <p>
+              Ke depannya, saya ingin memperdalam pemrograman dengan
+              <strong>JavaScript</strong> dan framework modern seperti
+              <strong>React</strong> atau <strong>Laravel</strong>.
+            </p>
+            <a href="mailto:josuasllh4@gmail.com" class="btn btn-primary">
+              <i class="bi bi-envelope"></i> Hubungi Saya
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container mt-5">
+      <h3 class="mb-4 text-center">More About Me</h3>
+
+      <div class="accordion" id="aboutAccordion">
+        <!-- What I Want To Be -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              What I Want To Be?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#aboutAccordion"
+          >
+            <div class="accordion-body">
+              Saya ingin menjadi seorang
+              <strong>AI dan Web Developer</strong> yang menguasai teknologi
+              modern seperti React, Laravel, Node.js, dan Machine Learning.
+              Tujuannya adalah bisa membangun aplikasi web yang bermanfaat dan
+              scalable.
+            </div>
+          </div>
+        </div>
+
+        <!-- What I Use for Develop -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              What I Use for Develop?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#aboutAccordion"
+          >
+            <div class="accordion-body">
+              Saat ini saya menggunakan:
+              <ul>
+                <li><strong>Visual Studio Code</strong> sebagai code editor</li>
+                <li><strong>Git & GitHub</strong> untuk version control</li>
+                <li><strong>Bootstrap 5.3</strong> untuk desain responsif</li>
+                <li><strong>Python & Anaconda</strong> untuk AI engginering</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- What My Device -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              What My Device?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#aboutAccordion"
+          >
+            <div class="accordion-body">
+              Saya menggunakan perangkat sederhana untuk belajar:
+              <ul>
+                <li>Laptop Windows 11, RAM 32GB</li>
+                <li>Hosting untuk testing</li>
+                <li>Android Phone untuk uji coba tampilan mobile</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2025 My About. All rights reserved Pabweb.</p>
+      </div>
+    </footer>
+
+    <script src="/assets/vendor/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
